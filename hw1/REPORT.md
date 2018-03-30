@@ -11,7 +11,7 @@ Author: 404410030 資工三 鄭光宇
 
 在作業程式碼中，每種人臉取前 35 張做為訓練資料，其餘做為測試資料。
 
-為了使得程式碼更簡潔、有效率，我在程式碼中用了特別多類似 Functional Programming 的方式去實作 SSD, SAD 與 Nearest Neighbor，並且再計算 Nearest Neighbor 時，使用 python 中的 `multiprocessing` 模組去加速計算 Nearest Neighbor。多虧這次一時興起想練習這種寫法，讓我可以更加了解如何寫出更簡潔、有效率的 python 程式碼。 
+為了使得程式碼更簡潔、有效率，我在程式碼中用了特別多類似 Functional Programming 的方式去實作 SSD, SAD 與 Nearest Neighbor，並且在計算 Nearest Neighbor 時，使用 python 中的 `multiprocessing` 模組去加速計算 Nearest Neighbor。多虧這次一時興起想練習這種寫法，讓我可以更加了解如何寫出更簡潔、有效率的 python 程式碼。 
 
 #### Experimental results - accuracy
 
