@@ -19,7 +19,7 @@ matplotlib
     jupyter notebook NN.ipynb
     ```
     
-    jupyter notebook 開啟後，按下 `RUN`
+    jupyter notebook 開啟後，一路按下 `RUN`到底
     
     會跑出 SAD, SSD 使用 Nearest Neighbor 方法分類人臉的 Accuracy。
 
