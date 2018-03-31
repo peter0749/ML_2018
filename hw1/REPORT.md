@@ -19,8 +19,8 @@ Author: 404410030 資工三 鄭光宇
 ```
 Train SSD acc: 100.00%
 Train SAD acc: 100.00%
-Test SSD acc: 24.52%
-Test SAD acc: 18.80%
+Test SSD acc: 45.99%
+Test SAD acc: 45.07%
 ```
 
 #### Discussion of difficulty or problem encountered
@@ -30,8 +30,9 @@ Test SAD acc: 18.80%
 ```
 Train SSD acc: 100.00%
 Train SAD acc: 100.00%
-Test SSD acc: 59.35%
-Test SAD acc: 31.89%
+Test SSD acc: 68.20%
+Test SAD acc: 63.87%
 ```
 
 因為有隨機的成分在程式碼內，所以不一定能重現這組 accuracy，但是應該會很接近。有隨機洗牌的程式碼在 `NN_random_shuffle.ipynb`。
+另外，剛開始做這個作業時，忘了把 np.uint8 轉成 np.float32 ，導致計算時 overflow ，過了一段時間看程式碼才發現這件事。
