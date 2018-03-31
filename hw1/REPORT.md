@@ -15,10 +15,12 @@ Author: 404410030 資工三 鄭光宇
 
 #### Experimental results - accuracy
 
-照作業題目要求，將圖片先以檔名遞增排序後，每種臉取前 35 張作為訓練資料，其餘做為測試資料，跑 Nearest Neighbor 在測試集上的 accuracy 如下:
+照作業題目要求，將圖片先以檔名遞增排序後，每種臉取前 35 張作為訓練資料，其餘做為測試資料，跑 Nearest Neighbor 在訓練集 / 測試集上的 accuracy 如下:
 ```
-SSD acc: 24.52%
-SAD acc: 18.80%
+Train SSD acc: 100.00%
+Train SAD acc: 100.00%
+Test SSD acc: 24.52%
+Test SAD acc: 18.80%
 ```
 
 #### Discussion of difficulty or problem encountered
@@ -26,8 +28,10 @@ SAD acc: 18.80%
 因為作業要求分割訓練集與測試集的時候，必須把人臉圖片以檔名排序後的前 35 張當訓練集，剩下的當作測試集；再加上排序後的前 35 張與剩下的圖片，光線的明暗差異非常大，所以圖片以檔名排序後跑 SSD, SAD 的準確率，相較將人臉圖片順序先洗牌後，再分割訓練集與測試集跑 SSD, SAD 的結果還要差。例如，如果多了將人臉順序洗牌的步驟，再去計算 SSD, SAD ，可能會得到如下 accuracy:
 
 ```
-SSD acc: 59.26%
-SAD acc: 35.30%
+Train SSD acc: 100.00%
+Train SAD acc: 100.00%
+Test SSD acc: 59.35%
+Test SAD acc: 31.89%
 ```
 
 因為有隨機的成分在程式碼內，所以不一定能重現這組 accuracy，但是應該會很接近。有隨機洗牌的程式碼在 `NN_random_shuffle.ipynb`。
