@@ -40,3 +40,5 @@ Loss: 1.7132
 #### Discussion of difficulty or problem encountered
 
 雖然沒有明顯的 overfitting 發生，不過 training 和 validation loss 之間的 gap 非常大，也許一般性還不夠好？這可能要再試試更多 fine-tune 的技巧，使得模型的一般性能夠更好。
+
+或者，可以試著使用別的模型的 pretrain weights ，例如 Xception, ResNet 等較新一點的模型，搞不好會有一些驚喜。
